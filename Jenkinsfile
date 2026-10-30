@@ -5,6 +5,8 @@ pipeline {
         APP_NAME     = "budget-tracker"
         PORT         = "5000"
         PYTHONPATH   = "."
+        // Set Python and Scripts directories on the build agent
+        PATH         = "C:\\Users\\RAVI\\AppData\\Local\\Programs\\Python\\Python313;C:\\Users\\RAVI\\AppData\\Local\\Programs\\Python\\Python313\\Scripts;${env.PATH}"
     }
 
     stages {
